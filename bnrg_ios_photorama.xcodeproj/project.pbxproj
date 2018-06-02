@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		30B0DE3020C290170052DCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE2F20C290170052DCF4 /* AppDelegate.swift */; };
-		30B0DE3220C290170052DCF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE3120C290170052DCF4 /* ViewController.swift */; };
 		30B0DE3520C290170052DCF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B0DE3320C290170052DCF4 /* Main.storyboard */; };
 		30B0DE3720C2901E0052DCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B0DE3620C2901E0052DCF4 /* Assets.xcassets */; };
 		30B0DE3A20C2901E0052DCF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B0DE3820C2901E0052DCF4 /* LaunchScreen.storyboard */; };
 		30B0DE4520C2901E0052DCF4 /* bnrg_ios_photoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE4420C2901E0052DCF4 /* bnrg_ios_photoramaTests.swift */; };
 		30B0DE5020C2901E0052DCF4 /* bnrg_ios_photoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE4F20C2901E0052DCF4 /* bnrg_ios_photoramaUITests.swift */; };
+		30B0DE5E20C291CB0052DCF4 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE5D20C291CB0052DCF4 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		30B0DE2C20C290170052DCF4 /* bnrg_ios_photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bnrg_ios_photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B0DE2F20C290170052DCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30B0DE3120C290170052DCF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30B0DE3420C290170052DCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30B0DE3620C2901E0052DCF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30B0DE3920C2901E0052DCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		30B0DE4B20C2901E0052DCF4 /* bnrg_ios_photoramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bnrg_ios_photoramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B0DE4F20C2901E0052DCF4 /* bnrg_ios_photoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bnrg_ios_photoramaUITests.swift; sourceTree = "<group>"; };
 		30B0DE5120C2901E0052DCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B0DE5D20C291CB0052DCF4 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				30B0DE2F20C290170052DCF4 /* AppDelegate.swift */,
-				30B0DE3120C290170052DCF4 /* ViewController.swift */,
 				30B0DE3320C290170052DCF4 /* Main.storyboard */,
 				30B0DE3620C2901E0052DCF4 /* Assets.xcassets */,
 				30B0DE3820C2901E0052DCF4 /* LaunchScreen.storyboard */,
 				30B0DE3B20C2901E0052DCF4 /* Info.plist */,
+				30B0DE5D20C291CB0052DCF4 /* PhotosViewController.swift */,
 			);
 			path = bnrg_ios_photorama;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B0DE3220C290170052DCF4 /* ViewController.swift in Sources */,
+				30B0DE5E20C291CB0052DCF4 /* PhotosViewController.swift in Sources */,
 				30B0DE3020C290170052DCF4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
