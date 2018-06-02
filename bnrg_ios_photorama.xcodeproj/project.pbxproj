@@ -14,6 +14,7 @@
 		30B0DE4520C2901E0052DCF4 /* bnrg_ios_photoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE4420C2901E0052DCF4 /* bnrg_ios_photoramaTests.swift */; };
 		30B0DE5020C2901E0052DCF4 /* bnrg_ios_photoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE4F20C2901E0052DCF4 /* bnrg_ios_photoramaUITests.swift */; };
 		30B0DE5E20C291CB0052DCF4 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE5D20C291CB0052DCF4 /* PhotosViewController.swift */; };
+		30B0DE6020C2A4000052DCF4 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE5F20C2A4000052DCF4 /* FlickrAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		30B0DE4F20C2901E0052DCF4 /* bnrg_ios_photoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bnrg_ios_photoramaUITests.swift; sourceTree = "<group>"; };
 		30B0DE5120C2901E0052DCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B0DE5D20C291CB0052DCF4 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		30B0DE5F20C2A4000052DCF4 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				30B0DE3820C2901E0052DCF4 /* LaunchScreen.storyboard */,
 				30B0DE3B20C2901E0052DCF4 /* Info.plist */,
 				30B0DE5D20C291CB0052DCF4 /* PhotosViewController.swift */,
+				30B0DE5F20C2A4000052DCF4 /* FlickrAPI.swift */,
 			);
 			path = bnrg_ios_photorama;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B0DE6020C2A4000052DCF4 /* FlickrAPI.swift in Sources */,
 				30B0DE5E20C291CB0052DCF4 /* PhotosViewController.swift in Sources */,
 				30B0DE3020C290170052DCF4 /* AppDelegate.swift in Sources */,
 			);
