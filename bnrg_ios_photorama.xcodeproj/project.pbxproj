@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		302C6DBB20C3FCF20099906E /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C6DBA20C3FCF10099906E /* PhotoDataSource.swift */; };
 		302C6DBD20C402320099906E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C6DBC20C402320099906E /* PhotoCollectionViewCell.swift */; };
+		302C6DBF20C4186E0099906E /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C6DBE20C4186E0099906E /* ImageStore.swift */; };
 		30B0DE3020C290170052DCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0DE2F20C290170052DCF4 /* AppDelegate.swift */; };
 		30B0DE3520C290170052DCF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B0DE3320C290170052DCF4 /* Main.storyboard */; };
 		30B0DE3720C2901E0052DCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B0DE3620C2901E0052DCF4 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		302C6DBA20C3FCF10099906E /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		302C6DBC20C402320099906E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		302C6DBE20C4186E0099906E /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		30B0DE2C20C290170052DCF4 /* bnrg_ios_photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bnrg_ios_photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B0DE2F20C290170052DCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B0DE3420C290170052DCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		30B0DE2E20C290170052DCF4 /* bnrg_ios_photorama */ = {
 			isa = PBXGroup;
 			children = (
+				302C6DBE20C4186E0099906E /* ImageStore.swift */,
 				30B0DE2F20C290170052DCF4 /* AppDelegate.swift */,
 				30B0DE5D20C291CB0052DCF4 /* PhotosViewController.swift */,
 				30B0DE5F20C2A4000052DCF4 /* FlickrAPI.swift */,
@@ -274,6 +277,7 @@
 				30B0DE6020C2A4000052DCF4 /* FlickrAPI.swift in Sources */,
 				30B0DE5E20C291CB0052DCF4 /* PhotosViewController.swift in Sources */,
 				30B0DE6220C2B0320052DCF4 /* PhotoStore.swift in Sources */,
+				302C6DBF20C4186E0099906E /* ImageStore.swift in Sources */,
 				302C6DBB20C3FCF20099906E /* PhotoDataSource.swift in Sources */,
 				302C6DBD20C402320099906E /* PhotoCollectionViewCell.swift in Sources */,
 				30B0DE3020C290170052DCF4 /* AppDelegate.swift in Sources */,
