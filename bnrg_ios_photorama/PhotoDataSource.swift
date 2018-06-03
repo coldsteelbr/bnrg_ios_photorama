@@ -23,8 +23,8 @@ class PhotoDataSource: NSObject, UICollectionViewDataSource{
     
     // asks for the Cell to display for a give index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let identifire = "UICollectionViewCell"
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifire, for: indexPath)
+        let identifire = "PhotoCollectionViewCell"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifire, for: indexPath) as! PhotoCollectionViewCell
         
         return cell
     }

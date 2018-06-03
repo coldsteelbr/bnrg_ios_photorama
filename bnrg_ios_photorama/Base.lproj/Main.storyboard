@@ -28,14 +28,34 @@
                                     <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UICollectionViewCell" id="Kzt-Jc-yu9">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="Kzt-Jc-yu9" customClass="PhotoCollectionViewCell" customModule="bnrg_ios_photorama" customModuleProvider="target">
                                         <rect key="frame" x="2" y="2" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HOc-33-VQJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                </imageView>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="kVk-RS-fzC">
+                                                    <rect key="frame" x="35" y="35" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="HOc-33-VQJ" firstAttribute="top" secondItem="Kzt-Jc-yu9" secondAttribute="top" id="2OZ-fz-NbW"/>
+                                            <constraint firstItem="HOc-33-VQJ" firstAttribute="centerX" secondItem="kVk-RS-fzC" secondAttribute="centerX" id="DEv-D4-jfZ"/>
+                                            <constraint firstItem="HOc-33-VQJ" firstAttribute="centerY" secondItem="kVk-RS-fzC" secondAttribute="centerY" id="Ew6-cm-laj"/>
+                                            <constraint firstAttribute="bottom" secondItem="HOc-33-VQJ" secondAttribute="bottom" id="GwI-P3-ukL"/>
+                                            <constraint firstAttribute="trailing" secondItem="HOc-33-VQJ" secondAttribute="trailing" id="JHA-59-pwc"/>
+                                            <constraint firstItem="HOc-33-VQJ" firstAttribute="leading" secondItem="Kzt-Jc-yu9" secondAttribute="leading" id="Ude-jS-dO1"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="HOc-33-VQJ" id="fKR-3y-4uF"/>
+                                            <outlet property="spinner" destination="kVk-RS-fzC" id="mMv-FU-FCP"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
