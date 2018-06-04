@@ -41,6 +41,24 @@ class PhotoStore {
         return URLSession(configuration: config)
     }()
     
+    // Fetches all photos from the CoreData
+    func fetchAllPhotos(completion: @escaping (PhotoResult) -> Void) {
+        let fetchRequest: NSFetchRequest<Photo> = Photo.fetchRequest()
+        let sortByDataTaken = NSSortDescriptor(key: #keyPath(Photo.dateTaken), ascending: true)
+        
+        fetchRequest.sortDescriptors = [sortByDataTaken]
+        
+        let viewContext = persistentContainer.viewContext
+        viewContext.perform {
+            do {
+                let allPhotos = try viewContext.fetch(fetchRequest)
+                completion(.success(allPhotos))
+            } catch {
+                completion(.failure(error))
+            }
+        }
+    }
+    
     // Sends URL request to fetch photos using JSON data
     func fetchInterestingPhotos(completion: @escaping (PhotoResult) -> Void) {
         let url = FlickrAPI.interestingPhotosURL
@@ -49,7 +67,17 @@ class PhotoStore {
             (data, response, error) ->Void in
             
             // getting JSON data
-            let result = self.processPhotoRequest(data: data, error: error)
+            var result = self.processPhotoRequest(data: data, error: error)
+            
+            // saving changes to the CoreData
+            if case .success = result {
+                do {
+                    try self.persistentContainer.viewContext.save()
+                } catch let error {
+                    result = .failure(error)
+                }
+            }
+            
             // Running in the UI Thread
             OperationQueue.main.addOperation {
                 completion(result)
